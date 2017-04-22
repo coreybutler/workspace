@@ -65,6 +65,16 @@ switch (cmd.trim().toLowerCase()) {
     require('./lib/clean')(prefs)
     return
 
+  case '-v':
+  case '--version':
+  case 'version':
+    try {
+      console.log(JSON.parse(require('fs').readFileSync(require('path').join(__dirname, 'package.json'))).version)
+    } catch (e) {
+      console.log('Error retrieving version.')
+    }
+    return
+
   case '-h':
   case '--help':
   case 'help':
