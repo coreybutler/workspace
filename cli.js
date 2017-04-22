@@ -41,12 +41,16 @@ switch (cmd.trim().toLowerCase()) {
     require('./lib/tag')(prefs)
     return
 
-  case '--p':
   case '--pub':
   case '--publish':
   case 'pub':
   case 'publish':
     require('./lib/publish')(prefs)
+    return
+
+  case 'cmd':
+  case '--cmd':
+    require('./lib/launch')(prefs)
     return
 
   case 'run':
@@ -69,7 +73,7 @@ switch (cmd.trim().toLowerCase()) {
   case '--version':
   case 'version':
     try {
-      console.log(JSON.parse(require('fs').readFileSync(require('path').join(__dirname, 'package.json'))).version)
+      console.log('v' + JSON.parse(require('fs').readFileSync(require('path').join(__dirname, 'package.json'))).version)
     } catch (e) {
       console.log('Error retrieving version.')
     }
