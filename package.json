@@ -1,5 +1,5 @@
 {
-  "name": "workspace",
+  "name": "@ecor/workspace",
   "version": "0.0.1",
   "description": "A container workflow utility.",
   "main": "index.js",
