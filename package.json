@@ -1,0 +1,51 @@
+{
+  "name": "workspace",
+  "version": "0.0.1",
+  "description": "A container workflow utility.",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test/**/*.js | tap-spec && snazzy --verbose"
+  },
+  "bin": {
+    "workspace": "cli.js",
+    "ws": "cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coreybutler/workspace.git"
+  },
+  "keywords": [
+    "docker",
+    "workflow",
+    "workspace",
+    "cli",
+    "version",
+    "management",
+    "collaboration"
+  ],
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "author": "Corey Butler",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/coreybutler/workspace/issues"
+  },
+  "homepage": "https://github.com/coreybutler/workspace#readme",
+  "devDependencies": {
+    "babel-eslint": "^7.2.2",
+    "gulp": "^3.9.1",
+    "snazzy": "^7.0.0",
+    "standard": "^10.0.2",
+    "standard-tap": "^1.0.1",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.6.3"
+  },
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "fs-extra": "^2.1.2",
+    "js-yaml": "^3.8.3",
+    "preferences": "^0.2.1",
+    "shortbus": "^1.2.7"
+  }
+}
