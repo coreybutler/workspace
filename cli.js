@@ -41,6 +41,14 @@ switch (cmd.trim().toLowerCase()) {
     require('./lib/tag')(prefs)
     return
 
+  case '-p':
+  case '--port':
+  case 'port':
+  case '--ports':
+  case 'ports':
+    require('./lib/port')(prefs, args)
+    return
+
   case '--pub':
   case '--publish':
   case 'pub':
