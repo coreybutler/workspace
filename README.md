@@ -1,6 +1,6 @@
 # workspace
 
-`npm install -g workspace`
+`npm install -g @ecor/workspace`
 
 This command line utility makes container-based workflow easy. Currently,
 only Docker is supported. Docker must be installed on your local workstation.
