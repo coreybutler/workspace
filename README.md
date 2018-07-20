@@ -1,5 +1,7 @@
 # workspace
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/coreybutler/workspace.svg)](https://greenkeeper.io/)
+
 `npm install -g @ecor/workspace`
 
 This command line utility makes container-based workflow easy. Currently,
